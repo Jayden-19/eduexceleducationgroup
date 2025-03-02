@@ -29,7 +29,8 @@ main{
     font-family: "Arial", "sans-serif";
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    width: auto;
+    max-width: 768px;
     text-align: center;
     height: 550px;
     padding: 40px 50px;
