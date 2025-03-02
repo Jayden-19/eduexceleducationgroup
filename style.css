@@ -29,7 +29,7 @@ main{
     font-family: "Arial", "sans-serif";
     display: flex;
     flex-direction: column;
-    width: auto;
+    max-width: 90%;
     text-align: center;
     height: 550px;
     padding: 40px 50px;
@@ -71,6 +71,9 @@ main{
 @media (min-width: 600px) {
     .links {
         grid-template-columns: repeat(2, 1fr);
+    }
+    main {
+        max-width: 100%;
     }
 }
 
