@@ -13,6 +13,7 @@ body {
     max-height: 100vh;
     max-width: 768px;
     align-items: center;
+    overflow: auto;
 }
 
 .background {
@@ -34,12 +35,13 @@ main{
     flex-direction: column;
     width: auto;
     text-align: center;
-    height: 550px;
+    height: auto;
+    min-height: 100vh;
     padding: 40px 50px;
     border: 3px solid black;
     border-radius: 5px;
     background-color: white;
-    margin: 0 auto;
+    margin: 20px auto;
     justify-content: center;
 }
 
@@ -77,6 +79,9 @@ main{
     }
     body {
         max-width: 100%;
+    }
+    main {
+        height: 550px;
     }
 }
 
