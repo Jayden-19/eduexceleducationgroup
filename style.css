@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the full area */
+    filter: blur(2px);
+    z-index: -1; /* Make sure it stays behind other elements */
+    transform: scale(1.1);
+}
+
+main{
+    font-weight: bold;
+    font-family: "Arial", "sans-serif";
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+    height: 550px;
+    padding: 40px 50px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 0 auto;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-right: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #ffc20e;
+    padding: 20px;
+    font-size: 13px;
+}
+
+.links a:hover {
+    background-color: #a5cd48;
+}
+
+.links a:active {
+    background-color: #90EE90;
+}
+
+i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.fa-instagram {
+    color: #E4405F;
+}
+
+.fa-facebook {
+    color: #1877F2
+}
+
+.fa-telegram {
+    color: #0088cc;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
