@@ -8,8 +8,8 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    height: auto;
     width: auto;
+    min-height: 100vh;
     max-height: 100vh;
     max-width: 100%;
     align-items: center;
@@ -40,9 +40,8 @@ main{
     border: 3px solid black;
     border-radius: 5px;
     background-color: white;
-    margin: auto;
     margin-top: 20px;
-    padding-top: 80px;
+    padding-top: 20px;
     justify-content: center;
 }
 
