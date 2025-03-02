@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
 .background {
     position: fixed;
     top: 0;
@@ -16,57 +24,73 @@
     transform: scale(1.1);
 }
 
-body {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: white;
-    padding: 20px;
-}
-
-main {
+main{
     font-weight: bold;
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "sans-serif";
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    width: 400px;
-    padding: 20px;
+    width: auto;
+    text-align: center;
+    height: 550px;
+    padding: 40px 50px;
     border: 3px solid black;
     border-radius: 5px;
     background-color: white;
-    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
 }
 
-/* 🔥 Default: Buttons are stacked in a column */
 .links {
     display: grid;
-    grid-template-columns: 1fr; /* Default: Single column */
-    gap: 10px;
-    width: 100%;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     text-decoration: none;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-right: 15px;
     border: 3px solid black;
     border-radius: 10px;
     background-color: #ffc20e;
-    padding: 10px;
-    font-size: 12px;
-    width: 100%; /* Full width */
-    height: 40px;
-    text-align: center;
+    padding: 20px;
+    font-size: 13px;
 }
 
-/* ✅ On larger screens (above 600px), use two columns */
+.links a:hover {
+    background-color: #a5cd48;
+}
+
+.links a:active {
+    background-color: #90EE90;
+}
+
 @media (min-width: 600px) {
     .links {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.fa-instagram {
+    color: #E4405F;
+}
+
+.fa-facebook {
+    color: #1877F2
+}
+
+.fa-telegram {
+    color: #0088cc;
+}
+
+.fa-youtube {
+    color: #FF0000;
 }
