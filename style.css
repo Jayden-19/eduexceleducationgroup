@@ -47,8 +47,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 10px; /* Adds spacing between items */
-    margin: 0 auto;
+    gap: 10px; /* Adds spacing */
+    width: 100%;
 }
 
 .links a {
@@ -58,21 +58,21 @@ main {
     border-radius: 10px;
     background-color: #ffc20e;
     padding: 15px;
-    font-size: 13px;
+    font-size: 14px;
+    text-align: center;
+    width: 90%; /* Prevents stretching */
+    max-width: 140px; /* Keeps buttons smaller */
+    margin: 0 auto; /* Center aligns them */
 }
 
-/* RESPONSIVE FIXES */
 @media (max-width: 600px) {
     .links {
-        grid-template-columns: 1fr; /* Change to 1 column on mobile */
-    }
-
-    main {
-        padding: 20px; /* Reduce padding on smaller screens */
+        grid-template-columns: 1fr; /* Force single column */
     }
 
     .links a {
-        font-size: 12px;
-        padding: 12px;
+        max-width: 90%; /* Make buttons fit mobile screens */
+        font-size: 12px; /* Reduce text size */
     }
 }
+
