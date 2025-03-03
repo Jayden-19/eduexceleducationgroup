@@ -40,7 +40,8 @@ main{
     border: 3px solid black;
     border-radius: 5px;
     background-color: white;
-    margin-top: 600px;
+    margin-top: 500px;
+    margin-bottom: 500px;
     padding-top: 30px;
     justify-content: center;
 }
